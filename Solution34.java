@@ -11,8 +11,8 @@ import java.util.Arrays;
 
 public class Solution34 {
     public int[] solution(int[] array, int[][] commands) {
-        int[] realAnswer = new int[commands[0].length];
-        for (int a = 0; a < commands[0].length; a++) {
+        int[] realAnswer = new int[commands.length];
+        for (int a = 0; a < commands.length; a++) {
             int[] answer = array;
             int[] answer1 = Arrays.copyOfRange(answer, commands[a][0]-1, commands[a][1]);
             Arrays.sort(answer1);
