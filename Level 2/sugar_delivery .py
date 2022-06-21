@@ -1,5 +1,12 @@
-def soultion(n):
-    arr = [1, 2, 4, 11, 12, 14, 21, 22, 24, 41, 42, 44]
-    if n <= 12
-    return answer
+sugar = int(input())
 
+bag = 0
+while sugar >= 0 :
+    if sugar % 5 == 0 :
+        bag += (sugar // 5)
+        print(bag)
+        break
+    sugar -= 3  
+    bag += 1
+else :
+    print(-1)
